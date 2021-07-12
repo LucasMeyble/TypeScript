@@ -32,7 +32,6 @@ let coisa = soma(90, 10)
 
 const nomes1 = ['lucas', 'pedro', 'joao', 'carlos', 90];
 
-
 //nessa função ele nao da error pq eu faço uma verificação do nome ser uma string ou nao.
 nomes1.forEach( function(nome){
     if(typeof nome === 'string'){
@@ -41,3 +40,16 @@ nomes1.forEach( function(nome){
         console.log(nome)
     }
 })
+
+// -------------------------------------------------------------------------
+
+function resumo (usuario: {nome: string, idade: number}){
+    return `Meu nome é ${usuario.nome} e minha idade é ${usuario.idade}.`
+}
+
+let u = {
+    nome: ' lucas',
+    idade: 18
+};
+
+resumo(u)
