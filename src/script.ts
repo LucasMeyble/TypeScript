@@ -126,3 +126,15 @@ const mult: MathFunction = (n1, n2) => {
 const div: MathFunction = (n1, n2) => {
     return n1 / n2
 }
+// -------------------------------------------------------------------------
+
+//aqui eu to dizendo q a função pode me retorna ranto void quanto qualquer coisa
+type QualquerFunction = () => void;
+
+const algo: QualquerFunction = () => {
+    return 12
+}
+
+const blabla = (): void => {
+
+}
