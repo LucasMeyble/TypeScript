@@ -66,3 +66,18 @@ function mostrarIdade (age: string | number){
 
 mostrarIdade(80);
 mostrarIdade('80')
+// -------------------------------------------------------------------------
+
+type User = {
+    id: string
+    nickName: string
+}
+
+function res (user: User){
+    return ` Olá ${user.nickName}, seu numero é ${user.id}`
+}
+
+res({
+    id: '18907',
+    nickName: 'lucas'
+})
