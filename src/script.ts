@@ -20,5 +20,11 @@ function firstLetterUpperCase(name: string){
 
 firstLetterUpperCase('lucas')
 
+// -------------------------------------------------------------------------
 
+//definindo o tipo do retorno de uma função
+function soma (n1: number, n2: number): number {
+    return n1 + n2;
+}
+let coisa = soma(90, 10)
 
