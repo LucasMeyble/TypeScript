@@ -28,3 +28,16 @@ function soma (n1: number, n2: number): number {
 }
 let coisa = soma(90, 10)
 
+// -------------------------------------------------------------------------
+
+const nomes1 = ['lucas', 'pedro', 'joao', 'carlos', 90];
+
+
+//nessa função ele nao da error pq eu faço uma verificação do nome ser uma string ou nao.
+nomes1.forEach( function(nome){
+    if(typeof nome === 'string'){
+        console.log(nome)
+    }else {
+        console.log(nome)
+    }
+})
