@@ -68,6 +68,7 @@ mostrarIdade(80);
 mostrarIdade('80')
 // -------------------------------------------------------------------------
 
+//tipando os dados fora da função
 type User = {
     id: string
     nickName: string
@@ -81,3 +82,9 @@ res({
     id: '18907',
     nickName: 'lucas'
 })
+// -------------------------------------------------------------------------
+
+//to dizendo q o idade é um input, logo ele tem um value pra ser mostrado.
+let idadeField = document.getElementById('idade') as HTMLInputElement
+
+console.log(idadeField.value)
