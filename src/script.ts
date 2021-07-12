@@ -88,3 +88,21 @@ res({
 let idadeField = document.getElementById('idade') as HTMLInputElement
 
 console.log(idadeField.value)
+// -------------------------------------------------------------------------
+
+function fazendoRequisicao (url: string, method: 'GET' | 'POST'){
+//...
+}
+
+type RequestDetails = {
+    url: string,
+    //aqui eu defino um tipo q ele vai aceitar, eu que criei esse tipo
+    method: 'GET' | 'POST'
+}
+
+let req: RequestDetails = {
+    url: 'https://www.google.com.br',
+    method: 'GET'
+} 
+
+fazendoRequisicao(req.url, req.method)
