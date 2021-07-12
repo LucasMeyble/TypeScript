@@ -43,13 +43,18 @@ nomes1.forEach( function(nome){
 
 // -------------------------------------------------------------------------
 
-function resumo (usuario: {nome: string, idade: number}){
-    return `Meu nome é ${usuario.nome} e minha idade é ${usuario.idade}.`
+//tipando os dados q viram no objeto
+//o ponto de interrogação é pra ele perguntar se a propriedade veio ou nao 
+function resumo (usuario: {nome: string, idade?: number}){
+    if(usuario.idade !== undefined){
+        return `Meu nome é ${usuario.nome} e minha idade é ${usuario.idade}.`
+    }else {
+        return `Meu nome é ${usuario.nome}`
+    }
 }
 
 let u = {
-    nome: ' lucas',
-    idade: 18
+    nome: ' lucas'
 };
 
 resumo(u)
